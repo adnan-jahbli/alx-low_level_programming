@@ -11,7 +11,7 @@ int main(void)
 	char hex[] = "0123456789abcdef";
 	int hex_size = sizeof(hex) / sizeof(hex[0]);
 
-	for (i = 0; i < hex_size; i++)
+	for (i = 0; i < (hex_size - 1); i++)
 		putchar(hex[i]);
 	putchar('\n');
 	return (0);
