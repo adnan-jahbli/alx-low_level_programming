@@ -19,3 +19,6 @@ int _isalpha(int c);
 
 /* Declaration of print_sign function which is defined in 5-sign.c*/
 int print_sign(int n);
+
+/* Declaration of _abs function which is defined in 6-abs.c*/
+int _abs(int n);
