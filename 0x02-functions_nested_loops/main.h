@@ -13,3 +13,6 @@ void print_alphabet_x10(void);
 
 /* Declaration of _islower function which is defined in 3-islower.c*/
 int _islower(int c);
+
+/* Declaration of _isalpha function which is defined in 4-isalpha.c*/
+int _isalpha(int c);
