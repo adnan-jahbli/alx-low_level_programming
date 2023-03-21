@@ -22,3 +22,6 @@ int print_sign(int n);
 
 /* Declaration of _abs function which is defined in 6-abs.c*/
 int _abs(int n);
+
+/* Declaration of print_last_digit function which is defined in 7-print_last_digit.c*/
+int print_last_digit(int n);
