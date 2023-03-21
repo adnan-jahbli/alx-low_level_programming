@@ -1,7 +1,5 @@
 #include <unistd.h>
-
-/* Declaration of -putchar function */
-int _putchar(char c);
+#include "main.h"
 
 /**
  * main - Printing _putchar in the standard output
