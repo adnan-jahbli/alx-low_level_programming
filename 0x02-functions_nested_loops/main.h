@@ -31,3 +31,6 @@ void jack_bauer(void);
 
 /* Declaration of times_table function which is defined in 9-times_table.c*/
 void times_table(void);
+
+/* Declaration of add function which is defined in 10-add.c*/
+int add(int a, int b);
