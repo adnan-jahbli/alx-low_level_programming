@@ -25,3 +25,6 @@ int _abs(int n);
 
 /* Declaration of print_last_digit function which is defined in 7-print_last_digit.c*/
 int print_last_digit(int n);
+
+/* Declaration of jack_bauer function which is defined in 8-24_hours.c*/
+void jack_bauer(void);
