@@ -28,3 +28,6 @@ int print_last_digit(int n);
 
 /* Declaration of jack_bauer function which is defined in 8-24_hours.c*/
 void jack_bauer(void);
+
+/* Declaration of times_table function which is defined in 9-times_table.c*/
+void times_table(void);
