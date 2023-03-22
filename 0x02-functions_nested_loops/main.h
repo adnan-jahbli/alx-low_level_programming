@@ -34,3 +34,6 @@ void times_table(void);
 
 /* Declaration of add function which is defined in 10-add.c*/
 int add(int a, int b);
+
+/* Declaration of print_to_98 function which is defined in 11-print_to_98.c*/
+void print_to_98(int n);
