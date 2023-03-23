@@ -28,21 +28,22 @@ int main(void)
  */
 void fibonacci(int n)
 {
-	int i, j, k;
+	long i, j, k, counter;
 
 	i = 1;
 	j = 0;
 	k = 0;
-	while (k <= n)
+	counter = 1;
+	while (counter < n)
 	{
-		printf("%d", k);
+		printf("%ld", k);
 		if (k == 1)
 			printf(", 1");
 		k = i + j;
 		j = i;
 		i = k;
-		if (k <= n)
+		if (counter < (n - 1))
 			printf(", ");
+		counter++;
 	}
 }
-
