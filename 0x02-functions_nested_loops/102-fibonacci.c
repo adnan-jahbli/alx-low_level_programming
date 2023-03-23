@@ -32,17 +32,15 @@ void fibonacci(int n)
 
 	i = 1;
 	j = 0;
-	k = 0;
+	k = 1;
 	counter = 1;
-	while (counter < n)
+	while (counter <= n)
 	{
-		printf("%ld", k);
-		if (k == 1)
-			printf(", 1");
 		k = i + j;
 		j = i;
 		i = k;
-		if (counter < (n - 1))
+		printf("%ld", k);
+		if (counter < (n))
 			printf(", ");
 		counter++;
 	}
