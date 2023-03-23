@@ -13,7 +13,7 @@ int main(void)
 	int a;
 
 	a = 1024;
-	printf("sum = %d\n", multiples_sum(a));
+	printf("%d\n", multiples_sum(a));
 	return (0);
 }
 
