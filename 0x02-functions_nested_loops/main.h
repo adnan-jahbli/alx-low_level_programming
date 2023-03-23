@@ -37,3 +37,6 @@ int add(int a, int b);
 
 /* Declaration of print_to_98 function which is defined in 11-print_to_98.c*/
 void print_to_98(int n);
+
+/* Declaration of print_times_table function which is defined in 100-times_table.c*/
+void print_times_table(int n);
