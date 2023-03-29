@@ -18,7 +18,7 @@ char *_strncpy(char *dest, char *src, int n)
 	while (src[j] != 0)
 		j++;
 	if (n >= 98)
-		n = 98;
+		n = 97;
 	for (k = 0; k < n; k++)
 	{
 		*(dest + k) = *(src + k);
