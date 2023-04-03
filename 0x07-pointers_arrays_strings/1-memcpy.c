@@ -5,6 +5,7 @@
  * @dest: the buffer where the copied memory area will be passed to
  * @src: the copied memory area
  * @n: number of elements to be copied from src
+ * Return: dest.
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
