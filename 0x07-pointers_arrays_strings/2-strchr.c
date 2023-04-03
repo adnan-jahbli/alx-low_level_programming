@@ -29,5 +29,5 @@ char *_strchr(char *s, char c)
 	if (exist == 1)
 		return (p);
 	else
-		return (0);
+		return ('\0');
 }
