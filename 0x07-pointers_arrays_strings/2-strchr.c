@@ -9,25 +9,16 @@
  */
 char *_strchr(char *s, char c)
 {
-	unsigned int i, exist;
-	char *p;
+	unsigned int i;
 
-	exist = 0;
 	i = 0;
 	while (*(s + i) != '\0')
 	{
 		if (*(s + i) == c)
-		{
-			p = s + i;
-			exist = 1;
-			break;
-		}
+			return (s + i);
 		i++;
 	}
 	if (*(s + i) == c)
-		exist = 1;
-	if (exist == 1)
-		return (p);
-	else
-		return ('\0');
+		return (s + i);
+	return ('\0');
 }
