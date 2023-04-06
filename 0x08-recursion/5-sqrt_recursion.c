@@ -33,5 +33,5 @@ int power(int n, int i)
 		else
 			return (-1);
 	}
-	return (0 + power(n, i + 1));
+	return (power(n, i + 1));
 }
