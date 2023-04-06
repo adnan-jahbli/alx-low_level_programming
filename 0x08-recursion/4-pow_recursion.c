@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * factorial -  function that returns the value of x raised to the power of y.
+ * _pow_recursion - returns the value of x raised to the power of y.
  * @x: the first number
  * @y: second numnber
  * Return: 1 if n is 0 and -1 if its less than 0,
