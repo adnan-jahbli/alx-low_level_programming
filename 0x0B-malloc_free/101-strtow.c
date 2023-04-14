@@ -16,7 +16,7 @@ char **strtow(char *str)
 	int *arr;
 	int i, j, k, num;
 
-	if (str == NULL || str == "")
+	if (str == NULL || *str == '\0')
 		return (NULL);
 
 	num = words_count(str); /*counting the number of words in str */
