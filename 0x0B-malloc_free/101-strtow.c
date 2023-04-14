@@ -20,6 +20,8 @@ char **strtow(char *str)
 		return (NULL);
 
 	num = words_count(str); /*counting the number of words in str */
+	if (num == 0)
+		return (NULL);
 
 	p = malloc(sizeof(char **) * num + 1);
 	if (p == NULL)
