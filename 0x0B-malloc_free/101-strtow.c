@@ -31,7 +31,7 @@ char **strtow(char *str)
 	i = 0;
 	for (k = 0; k < num; k++)
 	{
-		p[k] = malloc(sizeof(char) * arr[k] + 1);
+		p[k] = malloc(sizeof(char) * (arr[k] + 1));
 		if (p[k] == NULL)
 		{
 			for (; k >= 0; k--)
@@ -60,7 +60,9 @@ char **strtow(char *str)
 			}
 		}
 	}
+	free(arr);
 	p[num] = NULL;
+
 	return (p);
 }
 
