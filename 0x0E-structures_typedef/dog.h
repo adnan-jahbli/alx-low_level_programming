@@ -4,7 +4,7 @@
 /**
  * dog_t - Typedef for truct dog
  */
-typedef struct dog dog_t; 
+typedef struct dog dog_t;
 
 /**
  * struct dog - dogs attributes
