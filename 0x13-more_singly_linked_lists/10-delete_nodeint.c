@@ -14,6 +14,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	unsigned int i, n_of_nodes;
 
 	temp = *head;
+	n_of_nodes = 0;
 	while (temp)
 	{
 		n_of_nodes++;
