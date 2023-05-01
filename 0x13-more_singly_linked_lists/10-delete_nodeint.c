@@ -19,7 +19,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		n_of_nodes++;
 		temp = temp->next;
 	}
-	if (!head || index > n_of_nodes)
+	if (!head || !*head || index >= n_of_nodes)
 		return (-1);
 
 	temp = *head;
