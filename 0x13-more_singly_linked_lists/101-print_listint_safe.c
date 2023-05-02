@@ -1,6 +1,8 @@
 #include "lists.h"
 #include <stdio.h>
 
+void free_list_of_pointers(list_of_pointers_t **head);
+
 /**
  * print_listint_safe - a function that prints a linked list
  * @head: a pointer to the first node of the list
@@ -33,6 +35,7 @@ size_t print_listint_safe(const listint_t *head)
 			if (head == temp2->ptr)
 			{
 				printf("-> [%p] %d\n", (void *) head, head->n);
+				free_list_of_pointers(&temp);
 				return (node);
 			}
 		}
@@ -42,5 +45,28 @@ size_t print_listint_safe(const listint_t *head)
 		node++;
 	}
 
+	free_list_of_pointers(&temp);
 	return (node);
+}
+
+/**
+ * a function that frees a linked list
+ * @head: a pointer to the first node of the list
+ *
+ * Return: void.
+ */
+void free_list_of_pointers(list_of_pointers_t **head)
+{
+	list_of_pointers_t *temp, *current;
+
+	if (head)
+	{
+		current = *head;
+		while ((temp = current))
+		{
+			current = current->next;
+			free(temp);
+		}
+		*head = NULL;
+	}
 }
