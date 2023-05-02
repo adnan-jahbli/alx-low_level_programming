@@ -50,7 +50,7 @@ size_t print_listint_safe(const listint_t *head)
 }
 
 /**
- * a function that frees a linked list
+ * free_list_of_pointers - a function that frees a linked list
  * @head: a pointer to the first node of the list
  *
  * Return: void.
