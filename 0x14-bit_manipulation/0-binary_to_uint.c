@@ -12,11 +12,14 @@ unsigned int _strlen(const char *);
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i, num, factor, len;
-	int binary;
+	unsigned int num;
+	int binary, i, len, factor;
+
+	if (!b)
+		return (0);
 
 	binary = is_binary(b);
-	if (!binary || !b)
+	if (!binary)
 		return (0);
 
 	len = _strlen(b);
