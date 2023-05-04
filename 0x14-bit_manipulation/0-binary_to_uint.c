@@ -16,7 +16,7 @@ unsigned int binary_to_uint(const char *b)
 	int *p, binary;
 
 	binary = is_binary(b);
-	if (!binary || !b)
+	if (!binary || !b || !*b)
 		return (0);
 
 	len = _strlen(b);
