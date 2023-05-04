@@ -13,23 +13,20 @@ unsigned int _strlen(const char *);
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int i, num, factor, len;
-	int *p, binary;
+	int binary;
 
 	binary = is_binary(b);
 	if (!binary || !b)
 		return (0);
 
 	len = _strlen(b);
-	p = malloc(sizeof(int) * len);
-	if (!p)
-		return (0);
 
 	factor = 1;
 	num = 0;
 	for (i = 0; i < len; i++)
 	{
-		p[i] = b[len - 1 - i] - 48;
-		num += p[i] * factor;
+		if ((b[len - 1 - i] - 48) & 1)
+			num += factor;
 		factor *= 2;
 	}
 
