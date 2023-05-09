@@ -37,14 +37,14 @@ int main(int argc, char **argv)
 		error_fun(0, -1, argv);
 
 	close_error = close(fd);
-	if (close_error)
+	if (close_error == -1)
 	{
 		dprintf(2, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 
 	close_error = close(fd1);
-	if (close_error)
+	if (close_error == -1)
 	{
 		dprintf(2, "Error: Can't close fd %d\n", fd1);
 		exit(100);
