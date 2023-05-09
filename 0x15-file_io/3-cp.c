@@ -48,7 +48,7 @@ int main(int argc, char **argv)
 	close_error = close(fd1);
 	if (close_error == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d\n", fd1);
+		dprintf(2, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 	return (0);
