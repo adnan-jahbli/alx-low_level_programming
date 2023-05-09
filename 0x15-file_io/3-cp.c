@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 	if (read_bytes == -1)
 		error_fun(-1, 0, argv);
 
-	fd1 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	fd1 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	error_fun(0, fd1, argv);
 
 	written_bytes = write(fd1, buffer, read_bytes);
