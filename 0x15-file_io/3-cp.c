@@ -23,18 +23,20 @@ int main(int argc, char **argv)
 	}
 
 	fd = open(argv[1], O_RDONLY);
-	error_fun(fd, 0, argv);
-
-	read_bytes = read(fd, buffer, 1024);
-	if (read_bytes == -1)
-		error_fun(-1, 0, argv);
-
 	fd1 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	error_fun(0, fd1, argv);
+	error_fun(fd, fd1, argv);
 
-	written_bytes = write(fd1, buffer, read_bytes);
-	if (written_bytes == -1)
-		error_fun(0, -1, argv);
+	read_bytes = 1024;
+	while (read_bytes == 1024)
+	{
+		read_bytes = read(fd, buffer, 1024);
+		if (read_bytes == -1)
+			error_fun(-1, 0, argv);
+
+		written_bytes = write(fd1, buffer, read_bytes);
+		if (written_bytes == -1)
+			error_fun(0, -1, argv);
+	}
 
 	close_error = close(fd);
 	if (close_error == -1)
