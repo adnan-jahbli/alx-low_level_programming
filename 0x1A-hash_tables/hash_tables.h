@@ -2,6 +2,7 @@
 #define HASH_TABLES_H
 
 /* header files */
+#include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
 #include <string.h>
